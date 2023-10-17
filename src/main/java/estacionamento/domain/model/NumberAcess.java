@@ -9,11 +9,11 @@ import jakarta.persistence.Id;
 public class NumberAcess {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long number_acess;
+    private Long numberAcess;
     public Long getNumberAcess() {
-        return number_acess;
+        return numberAcess;
     }
-    public void setNumberAcess(Long number_acess) {
-        this.number_acess = number_acess;
+    public void setNumberAcess(Long numberAcess) {
+        this.numberAcess = numberAcess;
     }
 }

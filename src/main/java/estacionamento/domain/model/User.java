@@ -10,7 +10,7 @@ public class User {
     private String name;
     @Column(unique = true)
     private String cpf;
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne
     private NumberAcess numberAcess;
     @OneToOne(cascade = CascadeType.ALL)
     private Car car;
