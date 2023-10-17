@@ -43,7 +43,7 @@ public class UserServiceImpl implements UserService {
         userDb.setName(userUpdate.getName());
         userDb.setCpf(userUpdate.getCpf());
         userDb.setCar(userUpdate.getCar());
-        userDb.setNumberAcess(userUpdate.getNumberAcess());
+//        userDb.setNumberAcess(userUpdate.getNumberAcess());
         return this.userRepository.save(userDb);
     }
     @Transactional

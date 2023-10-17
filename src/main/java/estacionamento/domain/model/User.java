@@ -10,8 +10,8 @@ public class User {
     private String name;
     @Column(unique = true)
     private String cpf;
-    @OneToOne
-    private NumberAcess numberAcess;
+//    @OneToOne
+//    private NumberAcess numberAcess;
     @OneToOne(cascade = CascadeType.ALL)
     private Car car;
     public Long getId() {
@@ -32,12 +32,12 @@ public class User {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
-    public NumberAcess getNumberAcess() {
-        return numberAcess;
-    }
-    public void setNumberAcess(NumberAcess numberAcess) {
-        this.numberAcess = numberAcess;
-    }
+//    public NumberAcess getNumberAcess() {
+//        return numberAcess;
+//    }
+//    public void setNumberAcess(NumberAcess numberAcess) {
+//        this.numberAcess = numberAcess;
+//    }
     public Car getCar() {
         return car;
     }
