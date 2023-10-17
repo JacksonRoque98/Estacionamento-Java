@@ -5,15 +5,15 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-@Entity(name = "tb_numberAcess")
+@Entity(name = "tb_number_acess")
 public class NumberAcess {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long numberAcess;
+    private Long number_acess;
     public Long getNumberAcess() {
-        return numberAcess;
+        return number_acess;
     }
-    public void setNumberAcess(Long numberAcess) {
-        this.numberAcess = numberAcess;
+    public void setNumberAcess(Long number_acess) {
+        this.number_acess = number_acess;
     }
 }
