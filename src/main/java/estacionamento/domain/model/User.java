@@ -8,7 +8,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    @Column(unique = true)
+    @Column
     private String cpf;
     @OneToOne(cascade = CascadeType.ALL)
     private Car car;

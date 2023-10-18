@@ -4,7 +4,6 @@ import estacionamento.domain.model.User;
 import estacionamento.domain.repository.UserRepository;
 import estacionamento.service.UserService;
 import estacionamento.service.exception.BusinessException;
-import estacionamento.service.exception.NotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -43,7 +42,6 @@ public class UserServiceImpl implements UserService {
         userDb.setName(userUpdate.getName());
         userDb.setCpf(userUpdate.getCpf());
         userDb.setCar(userUpdate.getCar());
-//        userDb.setNumberAcess(userUpdate.getNumberAcess());
         return this.userRepository.save(userDb);
     }
     @Transactional
